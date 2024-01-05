@@ -1,0 +1,1 @@
+export const logo = "https://image.shutterstock.com/image-photo/image-260nw-2266128423.jpg"

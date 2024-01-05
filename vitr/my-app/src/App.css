@@ -1,0 +1,19 @@
+*{  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  margin:10px auto ;
+  box-shadow: 2px 3px 9px 0px black;
+}
+p{
+  font-size: 24px;
+}
+button{
+  padding: 10px 6px;
+}
+

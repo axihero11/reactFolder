@@ -1,0 +1,63 @@
+.registr_container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.registr_container .registr_item {
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registr_item .registr_box {
+  width: 100%;
+  height: 75vh;
+  padding: 40px;
+  background-color: RGB(241, 197, 13);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.registr_box .registr_input {
+  width: 100%;
+  height: auto;
+}
+.registr_box .registr_input label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(51, 44, 44);
+}
+
+.registr_box input {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 1vh 0 5vh;
+  -webkit-box-shadow: -3px 9px 58px -11px rgba(34, 60, 80, 0.18);
+  -moz-box-shadow: -3px 9px 58px -11px rgba(34, 60, 80, 0.18);
+  box-shadow: -3px 9px 58px -11px rgba(34, 60, 80, 0.18);
+}
+@media (max-width: 1024px) {
+  .registr_container .registr_item {
+    width: 95%;
+  }
+}
+@media (max-width: 750px) {
+    .registr_item .registr_box {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+.registr_box input {
+    padding: 15px;
+}
+  }

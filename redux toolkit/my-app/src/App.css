@@ -1,0 +1,103 @@
+.container {
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+}
+.navbar {
+    width: 100%;
+    height: 12vh;
+    background-color: RGB(22, 91, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 5;
+    padding: 0% 4%;
+    color: #fff;
+    font-size: larger;
+    transition: 0.6s ease all;
+    -webkit-transition: 0.6s ease all;
+    cursor: pointer;
+    overflow: hidden;
+}
+.navbar h1 {
+    font-size: 33px;
+}
+.navbar .nav {
+    width: 55%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    line-height: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.navbar .nav .span {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar .nav a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 70%;
+    border-bottom: transparent solid 1px;
+    transition: 0.3s linear all;
+    outline: none !important;
+    user-select: none;
+    letter-spacing: -0.5px;
+}
+.nav_button {
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: 0.5s;
+}
+.nav_button:hover {
+    background-color: white;
+    color: RGB(22, 91, 213);
+}
+.navbar_right {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.389);
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+.navbar_right .nav_right {
+    width: 25vw;
+    height: 100vh;
+    background-color: white;
+}
+.open {
+    display: block;
+}
+.close {
+    display: none;
+}
+.open {
+    display: block;
+}
+
+.active{
+    transition: .5s;
+}

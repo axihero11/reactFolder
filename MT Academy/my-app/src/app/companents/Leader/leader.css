@@ -1,0 +1,132 @@
+.leader_back {
+  margin-top: 15vh;
+  width: 100vw;
+  height: 105vh;
+  background-color: RGB(255, 255, 255);
+  position: absolute;
+  left: 0;
+  margin-top: -8vh;
+}
+.leader_body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+}
+.leader_back .leader_right {
+  width: 50%;
+  height: 90vh;
+  background-color: RGB(71, 138, 201);
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.leader_container {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 90vh;
+  margin-top: 23vh;
+}
+.leader_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.leader_item .leader_big_img {
+  width: 83%;
+  height: 65vh;
+}
+.leader_item .leader_big_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.leader_item .leader_small_img {
+  height: 400px;
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.leader_item .leader_small_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.leader_item .leader_text {
+  width: 100%;
+  height: 460px;
+  background-color: RGB(241, 197, 13);
+  padding: 45px 25px;
+  margin-left: 50px;
+}
+.leader_item .leader_text h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+.leader_item .leader_text p {
+  line-height: 25px;
+  margin: 20px 0 30px;
+  font-size: 17px;
+}
+.leader_item .leader_text button {
+  padding: 18px 25px;
+  width: 180px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  border-radius: 20px;
+  background-color: RGB(71, 138, 201);
+  color: white;
+}
+
+.leader_item .leader_text img {
+  width: 100%;
+  height: 100%;
+}
+
+.leader_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: -25vh;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+    .leader_back{
+        height: 200vh;
+    }
+  .leader_grid {
+    grid-template-columns: 1fr;
+    height: 95vh;
+  }
+  .leader_item .leader_small_img {
+    width: 80%;
+    height: 450px;
+  }
+  .leader_item .leader_big_img {
+    width: 100%;
+    height: 65vh;
+  }
+  .leader_item .leader_text {
+    margin: 0;
+  }
+}
+@media(max-width:440px){
+  .leader_item .leader_small_img {
+    height: 300px;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .leader_item .leader_text{
+    margin-top: 60px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+.back_life{
+  margin-top: 5vh;
+  width: 100vw;
+  height: 85vh;
+  background-color:RGB(247, 247, 247);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 30vh;
+}
+
+.life_container{
+  width: 100%;
+  height: auto;
+  padding-top: 10vh;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.life_container h1{
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.life_item{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3vh;
+}
+.life_item, .life_text{
+ width: 100%;
+}
+.life_img{
+  width: 90%;
+  height: auto;
+}
+.life_img img{
+  width: 100%;
+  height: 56vh;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.life_text{
+  line-height: 25px;
+  font-size: 18px;
+  width: 100%;
+
+}
+.life_text .life_box{
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+}
+.life_text .life_box .icons{
+  font-size: 130px;
+  margin-right: 10px;
+  color: RGB(241, 197, 13);
+}
+@media(max-width:980px){
+  .life_img img{
+   height: 100%;
+   margin: auto;
+  }
+}
+@media(max-width:800px){
+  .life_item{
+    grid-template-columns: 1fr;
+  }
+  .back_life{
+    height: 170vh;
+  }
+}
+
+  
+  
+  
